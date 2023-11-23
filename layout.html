@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .border{
+            border: 1px color blue solid;
+        }
+        .margin{
+            margin: 10px;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+        }
+        #main{
+            display: flex;
+            flex-direction: row;
+        }
+        #sidebar{
+            flex-grow: 1;
+            height: 700px;
+        }
+        #content{
+             flex-grow: 5;
+        }
+    </style>
 </head>
 <body>
-    <h1>TEST1</h1>
+    <div id="container"> <div class="border">
+        <div id="header">Header</div>
+        <div id="main"><div class="border margin-10">
+           <div id="sidebar">Sidebar</div>
+           <div id="content">Content</div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
